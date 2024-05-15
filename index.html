@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Falta l'etiqueta d'idioma -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forn de Pa delicios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Error de la pauta 1.1, etiqueta img té l'atribut alt buit -->
+        <img src="media/logo.png" alt="">
+    </header>
+    <!-- Ús incorrecte d'un element de secció, hauria d'estar dins del header al ser un element de navegació -->
+    <nav> 
+        <ul>
+            <!-- Enllaç amb text no descriptiu -->
+            <!-- Ordre il·lógic del navegador -->
+            <!-- Enllaços amb format diferent sense raó aparent -->
+            <!-- Elements de navegació que no són clarament identificables -->
+            <span><a href="#">Clica aquí</a></span>
+            <span><a href="#contact">Contacte</a></span>
+            <span><strong><a href="#promotions">Promocions</a></strong></span>
+            <span><a href="#about">Sobre nosaltres</a></span>
+            <span><a href="#gallery">Galeria</a></span>
+        </ul>
+    </nav>
+    <main>
+        <!-- Estructura dels títols incorrecta, no pot haver un h4 primer y el tercer un h1 -->
+        <section id="about">
+            <h4>Benvinguts al Forn de Pa ChimPà</h4>
+            <!-- Canvi a l'estil del text per dificultar la lectura -->
+            <p style="font-family: cursive; font-size: 14px;">Os donem la benvinguda a la página web del forn de pa ChimPà.</p>
+            <!-- Ús de llenguatge técnic sense explicació, com ara la tècnica de fermentació lenta,
+            o quins són els avantatges de la fermentació natural -->
+            <p>Som un forn artesanal que utilitza la tècnica de fermentació lenta per a la producció del nostre pa.</p>
+            <p>Aprofitem els avantatges de la fermentació natural per aconseguir una textura i un sabor únics.</p>
+            <p>El nostre pa s'utilitza en molts dels millors restaurants de la ciutat gràcies a la nostra reputació per produir productes de qualitat excepcional.</p>
+            <p>Estem compromesos amb la sostenibilitat i només fem servir ingredients de primera qualitat en tots els nostres productes.</p>
+        </section>
+        <!-- Color de fons que dificulta la lectura -->
+        <section id="promotions" style="background-color: #F5F5F5;">
+            <h2>Promocions especials</h2>
+            <!-- Text molt dens i llarg -->
+            <p>Les nostres promocions especials són una oportunitat única per aconseguir els millors productes al millor preu. No et perdis les següents ofertes increïbles:</p>
+            <p>1. Compra un pa de blat integral i obtén un 20% de descompte en la teva propera compra.</p>
+            <p>2. Per cada dos pans de sègol, obtindràs un pa de cereals gratis.</p>
+            <p>3. Aquesta setmana, porta 5 baguettes i paga només per 4. Aprofita ara aquesta gran oferta!</p>
+            <p>4. Subscriu-te al nostre servei de lliurament setmanal i obtindràs un descompte del 30% en la teva primera comanda.</p>
+            <p>5. Aquest mes, tots els clients nous rebran una mostra gratuïta de la nostra nova línia de productes sense gluten. Aprofita aquesta oportunitat i descobreix el sabor autèntic del nostre pa artesà.</p>
+        </section>
+        <!-- Falta de jerarquia lógica en aquesta secció, no està dins d'una etiqueta section -->
+        <h1>Galeria</h1>
+        <div class="gallery">
+            <img src="media/pa-fresc.jpg">
+            <img src="media/pa-cereal.jpg" alt="Pa de cereals">
+            <img src="media/baguettes.jpg" alt="Baguettes">
+        </div>
+        <section id="contact">
+            <h2>Contacte</h2>
+            <!-- Falta d'atributs al formulari, falten el placeholder en aquest cas -->
+            <form>
+                <!-- Falta de l'atribut "for" a l'etiqueta "label" -->
+                <label>Nom: <input type="text" name="name" required></label>
+                <label>Email: <input type="email" name="email" required></label>
+                <label>Missatge: <textarea name="message" required></textarea></label>
+                <!-- Mal ús de l'etiqueta <div> -->
+                <div class="button">
+                    <span>Enviar</span>
+                </div>
+            </form>            
+            <div id="map" class="map"></div>
+            <p>Adreça: Carrer del Pa, 123, Ciutat, País</p>
+            <p>Telèfon: 123-456-789</p>
+        </section>
+    </main>
+    <footer>
+        <!-- Mida de la lletra massa petita -->
+        <p style="font-size: 10px;">&copy; 2024 Forn de Pa delicios</p>
+    </footer>
+</body>
+</html>
